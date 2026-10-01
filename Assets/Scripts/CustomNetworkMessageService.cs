@@ -46,7 +46,6 @@ public class CustomNetworkMessageService : INetworkMessageService, IInitializabl
             }
             else
             {
-                // Если подписались до подключения, отправляем после успешного коннекта
                 NetworkClient.OnConnectedEvent += sendSub; 
             }
         }
